@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Tailwind Basics</title>
+    <style>
+        div{
+          
+            display: inline-block;  
+             margin: 20px;  
+           
+        }
+    </style>
+</head>
+ <body class = "bg-indigo-100" > 
+    <!-- <section class = ""> -->
+        <div class = "h-32 w-32 border-2 border-black rounded-3xl"></div>
+        <div class = "h-32 w-32 border-4 border-black rounded-full"></div>
+        <div class = "h-32 w-32 border-4 border-black rounded-r-xl"></div>
+        <div class = "h-32 w-32 border-b-4 border-t-4"></div>
+        <div class = "h-12 w-32 border-2 border-black rounded-full"></div>
+        <div class = "h-12 w-32 border-2 border-black rounded-none"></div>
+        <div class = "h-32 w-32 border-4 border-black rounded-tr-xl"></div>
+        <div class = "h-32 w-32 border-4 border-black rounded-xl border-opacity-50"></div>
+        <div class = "h-32 w-32 border-4 border-black rounded-xl border-dashed"></div>
+        <div class = "h-32 w-32 border-4 border-black rounded-xl border-dotted"></div>
+        <!-- See the documentation -->
+    <!-- </section> -->
+  <section class = "space-y-7">
+    <div class="border border-black bg-red-500 p-4">BOX 1</div>
+    <div class="border border-black bg-green-700 px-4 py-2 ">BOX 2</div>
+    <div class="border border-black mx-4">BOX 3</div>
+    <div class="border border-black my-4">BOX 4</div>
+</section>
+<section class="w-72 h-72  border-2 border-black m-6 flex  ">
+     
+    <div class="border border-black h-8 w-12 flex-shrink">BOX 1</div>
+    <div class="flex-grow border border-black h-8 w-12">BOX 2</div>
+    <div class="border border-black h-8 w-12">BOX 3</div>
+    <div class="border border-black h-8 w-12">BOX 4</div>
+
+</section>
+<section class="w-72 h-72  border-2 border-black m-6 flex justify-between items-baseline ">
+     
+    <div class="border border-black h-8 w-12">BOX 1</div>
+    <div class=" border border-black h-8 w-12">BOX 2</div>
+    <div class="border border-black h-8 w-12">BOX 3</div>
+    <div class="border border-black h-8 w-12">BOX 4</div>
+</section>
+<section class="m-6">
+    <p class = "text-red-900">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et nulla perferendis a facilis, expedita reiciendis. Quam quo aut consequatur doloremque expedita! <span class="line-through">Maiores ipsum quae iste doloribus reiciendis, </span>numquam voluptas assumenda mollitia ex accusamus, nihil delectus vero ipsa? Neque fuga tempora non quam sed. Dolor dolore natus quidem aspernatur cumque libero!
+    </p>
+    <p class = "text-justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil voluptates temporibus saepe quae labore harum! Modi explicabo quasi rerum nesciunt. Debitis quod vel nobis veniam.
+    </p>
+    <h1 class = "italic">
+        Lorem ipsum dolor sit amet.
+    </h1>
+    <h2 class = "">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, esse.
+    </h2>
+    <ul class = "list-inside list-disc border border-black">
+        <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </li>
+        <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </li>
+        <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </li>
+    </ul>
+</section>
+
+<section class="m-6">
+    <div class="h-44 w-28 bg-white rounded-md shadow-xl"></div>
+    <div class="h-44 w-28 bg-white rounded-md opacity-90"></div>
+    <div class="h-44 w-28 bg-white rounded-md"></div>
+    <div class="h-44 w-28 bg-white rounded-md"></div>
+</section>
+<section class="m-6">
+    <div class="h-44 w-28 bg-white rounded-md hover:shadow-lg"></div>
+    <div class="h-44 w-28 bg-white rounded-md hover: opacity-50"></div>
+    <div class="h-44 w-28 bg-white rounded-md"></div>
+    <div class="h-44 w-28 bg-white rounded-md"></div>
+    <button class = "border border-black px-4 py-2 rounded hover:bg-gray-600 hover:text-white  block">Click Me</button>
+    <div class="group hover:bg-white border border-indigo-500 p-6 rounded-md hover: border-transparent hover: shadow">
+        <p class="text-indigo-600 group hover:text-black">New Project</p>
+        <p class="text-indigo-400 group hover:text-gray-500">Create a new project</p>
+    </div>
+
+</section>
+<section class="m-6">
+    <div class="h-44 w-28 bg-white rounded-md hover:shadow-lg transition-all duration-500"></div>
+    <div class="h-44 w-28 bg-white rounded-md hover: opacity-50"></div>
+    <div class="h-44 w-28 bg-white rounded-md"></div>
+    <div class="h-44 w-28 bg-white rounded-md"></div>
+    <button class = "border border-black px-4 py-2 rounded hover:bg-gray-600 hover:text-white  block transition-colors duration-1000 ease-in-out">Click Me</button>
+    <div class="group hover:bg-white border border-indigo-500 p-6 rounded-md hover: border-transparent hover:shadow transition-all delay-1000">
+        <p class="text-indigo-600 group hover:text-black">New Project</p>
+        <p class="text-indigo-400 group hover:text-gray-500">Create a new project</p>
+    </div>
+    
+</section>
+<section class = "m-6">
+    <div class="h-44 w-28 bg-white rounded-md hover:shadow-lg transition-all duration-500"></div>
+    <div class="h-44 w-28 bg-white rounded-md hover:opacity-50"></div>
+    <div class="h-44 w-28 bg-white rounded-md"></div>
+    <div class="animate-pulse h-44 w-28 bg-white rounded-md "></div>
+    <br>
+    <button class = "bg-purple-500 text-white py-2 px-6 border rounded">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline animate-spin">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          
+        Processing
+    </button>
+    <div class="h-3 w-3 flex">
+        <span class="h-3 w-3 bg-purple-400 rounded-full absolute animate-ping"></span>
+        <span class="h-3 w-3 bg-purple-500 round-full"></span>
+    </div>
+   
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 animate-bounce">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+      </svg>
+      
+</section>
+<section class="bg-red-400 ">
+    <div class="h-44 w-28 bg-white rounded-md hover:shadow-xl transition-all duration-500"></div>
+    <div class="h-44 w-28 bg-white rounded-md opacity-50"></div>
+    <div class="h-44 w-28 bg-white rounded-md"></div>
+    <div class="h-44 w-28 bg-white rounded-md"></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint voluptates excepturi, dignissimos eos possimus, repudiandae exercitationem quisquam id vel necessitatibus neque aut amet provident ex, corporis dolor fugit velit odio qui. Doloribus laborum vero in tempore nisi labore ea nulla dicta odit corporis mollitia est at et repellendus blanditiis cum hic soluta, commodi voluptatum enim. Harum maxime iste veniam nulla nostrum impedit dicta beatae officia, quis earum natus tempore temporibus tempora totam necessitatibus, eligendi error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quas ut ea voluptatibus, libero est doloremque ipsam mollitia veniam, amet dignissimos unde harum suscipit sapiente tempora dolore possimus explicabo quis alias nihil vel voluptatum? Quis sed eius deserunt, reiciendis natus nihil mollitia delectus quos iusto?</p>
+</section>
+<section class="bg-purple-200 m-6 ">
+    <div class="h-44 w-28 bg-white rounded-md hover:shadow-xl transition-all duration-500"></div>
+    <div class="h-44 w-28 bg-white rounded-md opacity-50"></div>
+    <div class="h-44 w-28 bg-white rounded-md"></div>
+    <div class="h-44 w-28 bg-white rounded-md"></div>
+    <div class="border border-black bg-green-500">
+        <img src="assets/cat.jpg" alt="cat" class = "h-44 w-44 transform scale-150" >
+    </div>
+    <div class="border border-black bg-green-500">
+        <img src="assets/dog.jpeg" alt="dog" class = "h-44 w-44 transform rotate-45"  >
+    </div>
+    <div class="border border-black bg-green-500">
+        <img src="assets/cat.jpg" alt="cat" class = "h-44 w-44 transform translate-x-4 translate-y-20"  >
+    </div>
+    <div class="border border-black bg-green-500">
+        <img src="assets/dog.jpeg" alt="dog" class = "h-44 w-44 transform skew-x-12 skew-y-12"  >
+    </div>
+    <div class="border border-black bg-green-500">
+        <img src="assets/dog.jpeg" alt="dog" class = "h-44 w-44 transform rotate-12 m-10 origin-top-left" >
+    </div>
+    </section>
+    <section class="m-6 bg-purple-500">
+        <div class="h-44 w-28 bg-white rounded-md "></div>
+        <div class="h-44 w-28 bg-white rounded-md"></div>
+        <div class="h-44 w-28 bg-white rounded-md"></div>
+        <div class="h-44 w-28 bg-white rounded-md"></div>
+        <div class="h-96 w-96 bg-contain bg-no-repeat bg-right bg-scroll" style = "background-image: url(assets/cat.jpg);" ></div>
+    </section>
+    <section class="m-6 bg-purple-400">
+        <div class="h-44 w-28 bg-white rounded-md "></div>
+        <div class="h-44 w-28 bg-white rounded-md"></div>
+        <div class="h-44 w-28 bg-white rounded-md"></div>
+        <div class="h-44 w-28 bg-white rounded-md"></div>
+        <div class="h-96 w-96 border-4 bg-gradient-to-r from-red-600 via-green-200 to-pink-400" ></div>
+
+        <div class="text-5xl font-extrabold">
+            <span class = "bg-clip-text text-transparent bg-gradient-to-l from-green-400 to-blue-500">
+                Hello World
+            </span>
+        </div>
+    </section>
+     <section class="grid grid-cols-3 gap-y-4 container p-7 mx-auto text-center bg-purple-200">
+         <div class="bg-white rounded py-7">1</div>
+         <div class="bg-white rounded py-7">2</div>
+         <div class="bg-white rounded py-7">3</div>
+         <div class="bg-white rounded py-7">4</div>
+         <div class="bg-white rounded py-7">5</div>
+         <div class="bg-white rounded py-7">6</div>
+         <div class="bg-white rounded py-7">7</div>
+         <div class="bg-white rounded py-7">8</div>
+         <div class="bg-white rounded py-7">9</div>
+         <div class="bg-white rounded py-7">10</div>
+     </section>
+
+</body>
+
+</html>
